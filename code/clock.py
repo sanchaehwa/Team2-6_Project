@@ -1,12 +1,7 @@
 import time
 import threading
 from datetime import datetime
-'''# 현재 시간 표시
-def display_time():
-    while True:
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"\r {now}", end="")
-        time.sleep(1) '''
+
 # 스탑워치 기능 구현    
 def stopwatch():
     print("스톱워치 Start : Enter , End : Control+C")
@@ -15,7 +10,6 @@ def stopwatch():
     starttime = time.time()
     lasttime = starttime
     lapnumber = 1
-
 
     try:
         while True:
@@ -28,7 +22,6 @@ def stopwatch():
     except KeyboardInterrupt:
         print('\n\nEnd of Stopwatch')
 
-
 # 타이머 기능 구현
 def countdown(t):
     while t:
@@ -39,15 +32,11 @@ def countdown(t):
         t -= 1
     print("Timer Completed!")
 
-
 # 메인 함수
 def main():
-  '''  time_thread = threading.Thread(target=display_time, daemon=True)
-    time_thread.start()'''
-  try:
-        print("\n\n Select mode (1. Stopwatch, 2. Timer): ", end="")
+    try:
+        print("\n\nSelect mode (1. Stopwatch, 2. Timer): ", end="")
         mode = input()
-
 
         if mode == '1':
             stopwatch()
@@ -59,9 +48,8 @@ def main():
                 print("Invalid input. Please enter an integer.")
         else:
             print("Invalid mode selected.")
-  except KeyboardInterrupt: 
+    except KeyboardInterrupt: 
         print("\nShutdown by user")
-
 
 if __name__ == "__main__":
     main()
