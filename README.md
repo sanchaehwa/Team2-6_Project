@@ -34,8 +34,7 @@
 
 ### Project Tech Stack & File Structure
 #### Tech Stack 🔨
- <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"> <br>
- Version: 3.12 이상 <br>
+ <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"> <br> `version: 3.12 이상` <br>
 #### File Structure📂
 ```
 .
